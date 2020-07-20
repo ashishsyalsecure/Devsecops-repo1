@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+ ashishapp1:   #  this is my service  first
+  image: nginx:ashishwebv001    #  this is the tag  of image we want to build
+  build: https://github.com/ashishsyalsecure/Devsecops-repo1.git  #  path of Dockerfile
+  container_name: ashishc12  #  name of container
+  ports:    #  we are exposing  port number
+   - "4343:80"
